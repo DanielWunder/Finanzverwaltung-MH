@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+.italic {
+    font-style: italic;
+}
+.small {
+    font-size: small;
+}
+.bold {
+    font-weight: bold;
+}
+.button-container {
+    margin-bottom: 20px;
+}
+.button-container button {
+    width: auto; /* Automatische Breite, abhängig vom Text */
+    min-width: 80px; /* Mindestbreite */
+    margin: 5px;
+    padding: 8px 10px; /* Größeres Padding */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px; /* Größere Schrift */
+    text-align: center;
+}
+.button-container button:hover {
+    background-color: #45a049;
+}
+.button-container button.active {
+    background-color: #2196F3; /* Hervorhebung der aktiven Schaltfläche */
+}
+.button-container button .subtitle {
+    font-size: 12px; /* Kleinere Schrift für den Untertitel */
+    color: white;
+    display: block; /* Zeilenumbruch für den Untertitel */
+    margin-top: 4px; /* Abstand zum Haupttext */
+    text-align: center; /* Zentrieren des Untertitels */
+}
+.input-section {
+    margin-top: 20px;
+    display: none;
+}
+.input-section input, .input-section select {
+    margin: 0px;
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+}
+.input-section button {
+    padding: 10px 20px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+.input-section-div {
+    display: flex;
+    gap: 6px;
+    margin: 6px 0px;
+}
+.input-section-div input {
+    width: 1px;
+    flex-grow: 1;
+}
+.input-section-div select {
+    width: auto;
+}
+table {
+    border-collapse: collapse;
+    margin: 4px 0px;
+    width: 100%;
+}
+td, th {
+    padding: 10px 5px;
+    border: 1px solid black;
+}
+td:last-of-type {
+    text-align: center;
+}
+button.menuButton {
+    padding: 8px;
+    margin: 4px 0px;
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid gray;
+    background: white;
+}
+button.menuButton.active {
+    background: royalblue;
+    color: white;
+}
+button.export-button {
+    padding: 8px;
+    margin: 4px 0px;
+    float: right;
+}
+select {
+    padding: 8px;
+    margin: 4px 0px;
+}
+.tabgroup {
+    display: flex;
+}
+button.delete-button {
+    background: red;
+    border: none;
+    border-radius: 3px;
+    display: inline-flex;
+    padding: 5px 8px;
+}
+button.delete-button svg {
+    width: 18px;
+    height: 18px
+}
+button.export-button {
+    background: royalblue;
+    border: none;
+    border-radius: 3px;
+    display: inline-flex;
+    padding: 5px 8px;
+}
+button.export-button svg {
+    width: 18px;
+    height: 18px;
+}
+div#expense-saved-snack {
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    padding: 7px 13px;
+    background: yellowgreen;
+    color: white;
+    border-radius: 5px;
+    display: none;
+}
+div#expense-saved-snack svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
