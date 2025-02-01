@@ -3,6 +3,10 @@ body {
     padding: 10px;
     background-color: #f4f4f4;
 }
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
 .italic {
     font-style: italic;
 }
@@ -46,7 +50,7 @@ body {
     margin-top: 20px;
     display: none;
 }
-.input-section input, .input-section select {
+.input-section input, .input-section select, .input-section textarea {
     margin: 0px;
     padding: 8px;
     font-size: 14px;
