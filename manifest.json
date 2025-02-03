@@ -3,6 +3,7 @@
     "short_name": "Finanzverwaltung",
     "theme_color": "#FFFFFF",
     "background_color": "#FFFFFF",
+    "start_url": "/Finanzverwaltung-MH/",
     "display": "standalone",
     "orientation": "portrait"
 }
