@@ -319,9 +319,10 @@ function exportSelectedMonth(){
     var filteredExpenses = storedExpenses.filter(e => e.date.startsWith(monthSelect.value));
     filteredExpenses.sort((a, b) => a.date < b.date ? 1 : -1);
     
-    let csv = 'Kategorie;Währung;Betrag\n';
+    let csv = 'Datum;Code;Bezeichnung;Name;Info;Ausgang;Währung\n';
     filteredExpenses.forEach(expense => {
-        csv += expense.code + ";" + expense.currency + ";" + parseFloat(expense.amount).toLocaleString() + '\n';
+        const date = (new Date(expense.date)).toLocaleDateString("de-DE", { month: '2-digit', day: '2-digit', year: '2-digit' });
+        csv += date + ";" + expense.code + ";" + getCodeTitle(expense.code) + ";;" + expense.info + ";" + parseFloat(expense.amount).toLocaleString() + ";" + expense.currency + '\n';
     });
     downloadCSV(csv, monthSelect.value);
 }

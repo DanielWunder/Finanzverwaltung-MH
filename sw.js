@@ -1,4 +1,4 @@
-const version = 1;
+const version = 2;
 const staticName = `cache_${version}`;
 
 let assets = ['/', '/index.html', '/index.css', '/index.js', 'categories.json'];
