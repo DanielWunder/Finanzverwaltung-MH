@@ -1,6 +1,6 @@
 {
-    "name": "Finanzverwaltung",
-    "short_name": "Finanzverwaltung",
+    "name": "Ausgaben verwalten",
+    "short_name": "Ausgaben verwalten",
     "theme_color": "#FFFFFF",
     "background_color": "#FFFFFF",
     "start_url": "./",
