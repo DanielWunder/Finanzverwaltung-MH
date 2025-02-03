@@ -1,4 +1,4 @@
-const categories = [
+[
     {
         "code": "A",
         "subCategories": [{
@@ -504,4 +504,4 @@ const categories = [
         ],
         "title": "Spenden an Hilfsbedürftigen"
     }
-];
+]

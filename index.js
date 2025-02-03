@@ -1,4 +1,5 @@
 storedExpenses = [];
+categories = [];
 function activateMenu(id) {
     var newExpenseMenuButton = document.getElementById('newExpenseMenuButton');
     var historyMenuButton = document.getElementById('historyMenuButton');
@@ -337,5 +338,10 @@ window.onload = () => {
         storedExpenses = JSON.parse(storedExpensesString);
         storedExpenses.sort((a, b) => a.date < b.date ? 1 : -1);
     }
-    showNewExpense();
+    fetch("./categories.json")
+        .then(res => res.json())
+		.then(res => {
+            categories = res;
+            showNewExpense();
+        });
 };
