@@ -20,7 +20,7 @@ self.addEventListener("activate", (e) => {
 });
 
 self.addEventListener("fetch", (e) => {
-    if(window.location.host != 'localhost'){
+    if(!self.serviceWorker.scriptURL.includes('localhost')) {
         e.respondWith(caches.match(e.request).then(cacheResult => {
             return cacheResult || fetch(e.request);
         }));
